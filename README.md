@@ -1,2 +1,2 @@
 # GFG_POTD
-geeks for geeks problems of the day solutions
+Geeks For Geeks problems of the day solutions.

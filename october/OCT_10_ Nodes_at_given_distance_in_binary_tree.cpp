@@ -31,7 +31,7 @@ private:
         {
             int d = foundAt - level;
             if(d == K) ans.push_back(root->data);
-            collect(root->right,K - d - 1, ans);//-1 for right
+            else collect(root->right,K - d - 1, ans);//-1 for right
             return true;
         }
 
@@ -39,7 +39,7 @@ private:
         {
             int d = foundAt - level;
             if(d == K) ans.push_back(root->data);
-            collect(root->left,K - d - 1, ans);//-1 for ->left
+            else collect(root->left,K - d - 1, ans);//-1 for ->left
             return true;
         }
         return false;

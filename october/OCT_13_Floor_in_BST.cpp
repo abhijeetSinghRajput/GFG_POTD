@@ -1,3 +1,31 @@
+// ------------------ Brute Force Approach ------------------------
+
+// Function to search a node in BST.
+// class Solution{
+//     vector<int> arr;
+//     void inorder(Node *root){
+//         if(!root)return;
+        
+//         inorder(root->left);
+//         arr.push_back(root->data);
+//         inorder(root->right);
+//     }
+// public:
+//     int floor(Node* root, int x) {
+//         // Code here
+//         inorder(root);
+//         int ans = -1;
+//         for(auto i : arr){
+//             if(i > x){
+//                 return ans;
+//             }
+//             ans = i;
+//         }
+//         return ans;
+//     }
+// };
+
+
 class Solution{
     void find(Node *root, int x,int &ans){
         if(!root) return;
